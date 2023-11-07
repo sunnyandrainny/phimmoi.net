@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./main.js">
+    <title>Phimmoi.net</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="header" id="header">
+            <div class="phim-moi">
+                PHIMMOI.NET
+                <div class="btn-menu" >
+                    <button class="menu" id="btn-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <li class="first-child">Home <i class="fa-solid fa-house"></i></li>
+            <li>Movies <i class="fa-solid fa-film"></i></li>
+            <li>About <i class="fa-solid fa-circle-info"></i></li>
+        </ul>
+        <div class="content">
+            <div class="button first">
+                <button class="btn">
+                    LOGIN
+                </button>
+                <button class="btn">
+                    REGISTER
+                </button>
+            </div>
+            <div class="body">
+                <div class="slogan">
+                    #1 Free Online Movie Streaming Site in Vietnam
+                </div>
+                <div class="trending">
+                    Trending
+                </div>
+                <ul>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/batman_begins.300ec9e2854c965dad81.jpg" alt="">
+                            <span> <i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/dune.c985336d0f33b1f80771.jpg" alt="">
+                            <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/sing_2.ac0d6c1db306facf0d0d.jpg" alt="">
+                            <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/spider_man.647d265372e4e43d583c.jpg" alt="">
+                            <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/the_dark_knight.322404f0a846b48d6b01.jpg" alt="">
+                            <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="film">
+                            <img src="https://ontap.gorokiapp.com/static/media/the_dark_knight_rises.6b50435227d6605d898a.jpg" alt="">
+                            <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                        </div>
+                        <div class="info">
+                            <div class = "name">My Destiny</div>
+                            <div class="desc">Thai Lan</div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="button second">
+                    <button class="btn">LOAD MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const header = document.getElementById('header');
+        const btnMenu = document.getElementById('btn-menu');
+        btnMenu.onclick = function() {
+            var isClosed = header.clientHeight === 40;
+            if(isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = '12px';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <ul class="header">
+        <div class="first">PHIMMOI.NET</div>
+        <li class="first-child">Home <i class="fa-solid fa-house"></i></li>
+        <li>Movies <i class="fa-solid fa-film"></i></li>
+        <li>About <i class="fa-solid fa-circle-info"></i></li>
+    </ul>
+    <div class="content">
+        <div class="button">
+            <button class="login-btn">LOGIN</button>
+            <button class="register-btn">REGISTER</button>
+        </div>
+        <div class="slogan">
+            #1 Free Online Movie Streaming Site in Vietnam
+        </div>
+        <div class="trending">
+            Trending
+        </div>
+        <ul>
+            <div class="total">
+                <div class="film">
+                    <img src="https://bizweb.dktcdn.net/100/438/408/articles/destiny-la-gi.jpg?v=1678765635157" alt="">
+                    <span> <i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="film">
+                    <img src="https://static1.dienanh.net/upload/202107/0755acb0-36e3-4a1f-b3d7-c7cff049d3eb.jpg" alt="">
+                    <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="film">
+                    <img src="https://images2.thanhnien.vn/uploaded/minhnguyet/2016_05_31/phimhay19_GTSP.jpg?width=500" alt="">
+                    <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="film">
+                    <img src="https://static.gamehub.vn/img/files/2018/04/04/GameHubVN-xep-hang-29-bo-phim-lam-nen-vu-tru-dien-anh-dc-p2-9.jpg" alt="">
+                    <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="film">
+                    <img src="https://bazaarvietnam.vn/wp-content/uploads/2021/10/nhat-moi-thoi-dai-cuoi-be-bung-7-e1633333823834.jpg" alt="">
+                    <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="film">
+                    <img src="https://vuanem.com/blog/wp-content/uploads/2021/10/phim-godzilla-vs-kong.png" alt="">
+                    <span><i class="fa-regular fa-clock"></i> 120ms</span>
+                </div>
+                <div class="info">
+                    <div class = "name">My Destiny</div>
+                    <div class="desc">Thai Lan</div>
+                </div>
+            </div>
+        </ul>
+    <div class="load-more">
+        <button>LOAD MORE</button>
+        
+    </div>
+</div> -->

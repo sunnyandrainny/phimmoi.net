@@ -1,0 +1,189 @@
+ html, body, * {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #67E8F9;
+    color: #16405B;
+    text-align: right;
+    padding: 14px;
+    list-style: none;
+    font-size: 14px;
+    overflow: hidden;
+}
+.phim-moi{
+    padding-bottom: 8px;
+}
+.header hr{
+    background-color: #16405B;
+    width: 90px;
+    height: 0.3px;
+    margin-top: 12px;
+}
+.header li{
+    padding-top: 8px;
+}
+.header li:hover {
+    cursor: pointer
+}
+.header .first-child{
+    color: white;
+    background-color: #16405B;
+    padding: 10px;
+    margin-top: 4px;
+    margin-right: -6px;
+}
+.content{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: #ECFEFF;
+}
+.body{
+    padding: 30px;
+}
+.button{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    margin-top: 12px;
+    margin-right: 32px;
+}
+.button.first{
+    text-align: right;
+}
+.button .btn{
+    margin-right: 4px;
+    padding: 8px;
+    font-size: 12px;
+    color: #16405B;
+    font-weight: 600;
+    border: solid 1px #16405B;
+    border-radius: 4px;
+    background-color: #ECFEFF;
+}
+.button .btn:hover{
+    color: white;
+    background-color: #16405B;
+    cursor: pointer;
+}
+.slogan{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 24px;
+    font-weight: 600;
+    color: #16405B;
+    margin-top: 30px;
+}
+.trending{
+    color: #16405B;
+    margin-top: 30px;
+    border-bottom: solid 1px #16405B;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+.content ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.total{
+    margin-bottom: 12px
+}
+.total .film{
+    position: relative;
+    display: flex;
+}
+.total .film img{
+    width: 180px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 8px 1px #16405B;
+}
+.film span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.info{
+    background-color: #16405B;
+    color: white;
+    padding: 12px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 0 8px 1px #16405B
+}
+.info .name{
+    font-size: 14px;
+    margin-bottom: 4px; 
+}
+.info .desc{
+    font-size: 12px;
+}
+.film img:hover, .info:hover{
+    box-shadow: 0 0 16px 2px #16405B;
+    cursor: pointer;
+}
+.button.second {
+    text-align: center;
+}
+.button.second .btn:hover{
+    transform: scale(1.2); 
+    transition: transform 0.5s ease-out;
+}
+/*PC*/
+@media (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .btn-menu{
+        display: none;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .btn-menu{
+        display: none;
+    }
+}
+@media (max-width: 740px) {
+    .header{
+        height: 12px;
+    }
+    .btn-menu{
+        text-align: right;
+        margin-top: -20px;
+    }
+    .btn-menu button{
+        color: #16405B;
+        background-color: #67E8F9;
+        border: none;
+    }
+    .phim-moi{
+        text-align: left;
+    }
+    .button.first{
+        text-align: center;
+    }
+    .body ul{
+        justify-content: center;
+    }
+    .total .film img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
